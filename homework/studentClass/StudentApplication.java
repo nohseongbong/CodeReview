@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StudentApplication {
 	public static void main(String[] args) {
 		System.out.println("---------------------------------------------------------");
-		System.out.println("1.반생성    2.학생추가    3.학생제거    4.학생수정    5.평균    6.합계    7.평균");
+		System.out.println("1.반생성    2.학생추가    3.학생제거    4.학생수정    5.평균    6.합계    7.학생 리스트");
 		System.out.println("---------------------------------------------------------");
 		
 		Scanner sc = new Scanner(System.in);
