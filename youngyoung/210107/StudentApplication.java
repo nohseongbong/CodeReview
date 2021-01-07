@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+//https://docs.google.com/document/d/1bZzJyfqYwH2Byhi2i0Eqtlei54HNZBBSgKyA7gaWmRo/edit?usp=sharing
+
 public class StudentApplication {
 	// 반을 저장하는 list
 	private static List<String> bans = new ArrayList<String>();
@@ -84,12 +86,15 @@ public class StudentApplication {
 	}
 
 	// 5. 평균 6.함계
+	// option이라는 매개 변수를 활용하여서 평균과 합계를 구분한다.
 	private static void avgStudent(String option) {
 		for (int i = 0; i < bans.size(); i++) {
 			int cnt = 0;
 			int sumkor = 0;
 			int sumeng = 0;
 			int summath = 0;
+			
+			// 해당 반에 학생들만에 합계와 평균을 구하기 위한 반복문입니다.
 			for (int j = 0; j < students.size(); j++) {
 				if (bans.get(i).equals(students.get(j).getClassNo())) {
 
